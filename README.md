@@ -9,7 +9,7 @@ Still very basic, only has three calls for now:
 * getOperations
 
 But this should be sufficient to monitor a contract's operations :-).  
-API Documentation can be found in the [docs](docs) folder.
+API Documentation can be found in the [docs](https://toonevdb.github.io/tezos/).
 
 This library has some tests querying the current zeronet.  
 Once mainnet releases (or zeronet updates) I will update the values.
