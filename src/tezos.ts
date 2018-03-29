@@ -31,6 +31,9 @@ export class Tezos {
 
         this.client = axios.create({
             baseURL: this.nodeUrl,
+            headers: {
+                "Content-Type": "application/json",
+            },
         });
     }
 
@@ -112,6 +115,10 @@ export class Tezos {
      * @param data Data to send
      */
     private query(url: string, data?: any): AxiosPromise {
+        if (!data) {
+            data = {};
+        }
+
         return this.client.post(url, data);
     }
 }
